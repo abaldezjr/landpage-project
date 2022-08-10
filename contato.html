@@ -1,4 +1,20 @@
 <h1>Contato</h1>
-Nome:<input type="text">
-Email:<input type="email">
-Mensagem:<textarea></textarea>
+
+<!--
+    _next -  pagina de sucesso
+    _cc - envia o email para uma copia
+    _autoresponse - 
+
+
+-->
+
+<form action="https://formsubmit.co/abaldezjr@gmail.com" method="POST">
+    <input type="hidden" name="_next" value="http://127.0.0.1:5500/sucesso.html"/>
+    <input type="hidden" name="_cc" value="abaldezjr@outlook.com"/>
+    <input type="hidden" name="_autoresponse" value="Recebemos sua mensagem, obrigado pelo contato e logo responderemos!"/>
+    Nome:<input type="text" name="name" placeholder="Nome" required/></br>
+    Assunto:<input type="text" name="subject" placeholder="Assunto" required/></br>
+    Email:<input type="email" name="email" required/></br>
+    Mensagem:<textarea name="message" placeholder="Mensagem" required></textarea></br>
+    <button type="submit">Enviar</button>
+</form>
