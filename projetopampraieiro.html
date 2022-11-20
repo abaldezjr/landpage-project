@@ -59,84 +59,82 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+          <li class="nav-item active"><a class="nav-link" href="./index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="./projetopampraieiro.html">Projeto pampraieiro</a></li>
           <li class="nav-item"><a class="nav-link" href="./quemsomos.html">Quem somos</a></li>
           <li class="nav-item"><a class="nav-link" href="./portifolio.html">Portifólio</a></li>
           <li class="nav-item"><a class="nav-link" href="./nossarede.html">Nossa rede</a></li>
-          <li class="nav-item active"><a class="nav-link" href="./contato.html">Contato</a></li>
+          <li class="nav-item"><a class="nav-link" href="./contato.html">Contato</a></li>
         </ul>
       </div>
     </div>
   </nav>
   <!-- Fim do Menu de navegação -->
 
-  <!-- Contact section-->
-  <section class="bg-light py-5">
-    <div class="container px-5 my-5 px-5">
-      <div class="text-center mb-5">
-        <a id="contato">
-          <h2 class="display-4">CONTATO</h2>
-        </a>
-        <p class="lead mb-0">Nós amamos te ouvir!</p>
+  <!-- Carrossel -->
+  <header>
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
       </div>
-      <div class="row gx-5 justify-content-center">
-        <div class="col-lg-6">
-          <form id="contactForm" data-sb-form-api-token="API_TOKEN" action="https://formsubmit.co/abaldezjr@gmail.com"
-            method="POST">
-            <!-- hidden input-->
-            <input type="hidden" name="_next" value="./sucesso.html" />
-            <input type="hidden" name="_cc" value="abaldezjr@outlook.com" />
-            <input type="hidden" name="_autoresponse"
-              value="Recebemos sua mensagem, obrigado pelo contato e logo responderemos!" />
-            <!-- Name input-->
-            <div class="form-floating mb-3">
-              <input class="form-control" id="name" name="name" type="text" placeholder="Enter your name..."
-                data-sb-validations="required" required />
-              <label for="name">Nome</label>
-              <div class="invalid-feedback" data-sb-feedback="name:required">O nome é obrigatório.</div>
-            </div>
-            <!-- Email address input-->
-            <div class="form-floating mb-3">
-              <input class="form-control" id="email" name="email" type="email" placeholder="name@example.com"
-                data-sb-validations="required,email" required />
-              <label for="email">Email</label>
-              <div class="invalid-feedback" data-sb-feedback="email:required">O email é obrigatório.</div>
-              <div class="invalid-feedback" data-sb-feedback="email:email">O email não é valido.</div>
-            </div>
-            <!-- Subject input-->
-            <div class="form-floating mb-3">
-              <input class="form-control" id="name" name="subject" type="text" placeholder="Enter your name..."
-                data-sb-validations="required" required />
-              <label for="subject">Assunto</label>
-              <div class="invalid-feedback" data-sb-feedback="name:required">O nome é obrigatório.</div>
-            </div>
-            <!-- Message input-->
-            <div class="form-floating mb-3">
-              <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..."
-                style="height: 10rem" data-sb-validations="required" required></textarea>
-              <label for="message">Mensagem</label>
-              <div class="invalid-feedback" data-sb-feedback="message:required">A mensagem é obrigatória.</div>
-            </div>
-            <!-- Submit Button-->
-            <div class="d-grid"><button class="btn btn-primary btn-lg" id="submitButton"
-                type="submit">Submit</button></div>
-          </form>
+      <div class="carousel-inner">
+        <div class="carousel-item active" style="background-image: url('./img/carrossel/1.png')">
+          <div class="carousel-caption">
+            <h5>Autor</h5>
+            <p>Nome da imagem.</p>
+          </div>
+        </div>
+        <div class="carousel-item" style="background-image: url('./img/carrossel/2.png')">
+          <div class="carousel-caption">
+            <h5>Autor</h5>
+            <p>Nome da imagem.</p>
+          </div>
+        </div>
+        <div class="carousel-item" style="background-image: url('./img/carrossel/3.png')">
+          <div class="carousel-caption">
+            <h5>Autor</h5>
+            <p>Nome da imagem.</p>
+          </div>
         </div>
       </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Posterior</span>
+      </button>
     </div>
-  </section>
+  </header>
+  <!-- Fim do carrossel -->
+
+ 
   <!-- Footer-->
   <div class="container">
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
       <div class="col-md-4 d-flex align-items-center">
         <span class="mb-3 mb-md-0 text-muted">Copyright &copy; 2022 - by Baldez & Freitas</span>
       </div>
-  
+
       <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
-        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
-        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
+              <use xlink:href="#twitter" />
+            </svg></a></li>
+        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
+              <use xlink:href="#instagram" />
+            </svg></a></li>
+        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
+              <use xlink:href="#facebook" />
+            </svg></a></li>
       </ul>
     </footer>
   </div>
