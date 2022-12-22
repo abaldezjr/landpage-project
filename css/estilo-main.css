@@ -1,0 +1,9 @@
+body {
+
+    /*Não poder selecionar textos*/
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    /*Fim Não poder selecionar textos*/
+}

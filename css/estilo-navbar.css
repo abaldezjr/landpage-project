@@ -1,0 +1,12 @@
+.navbar-customlogo {
+    height: 40px;
+}
+
+.navbar-redes {
+    opacity: 60%;
+    transition: all 0.4s;
+}
+
+.navbar-redes:hover {
+    opacity: 100%;
+}
