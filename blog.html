@@ -45,7 +45,7 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <div class="container">
       <a class="navbar-brand" href="./index.html">
-        <img class="navbar-customlogo" src="./img/camarao-logo.png" alt="SUR Produções">
+        <img class="navbar-customlogo" src="./img/camarao-logo.png" alt="SUR Produções" />
       </a>
       <a class="navbar-brand" href="./index.html">SUR Produções</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
@@ -54,12 +54,12 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+          <li class="nav-item active"><a class="nav-link" href="./index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="./projetopampraieiro.html">Projeto pampraieiro</a></li>
           <li class="nav-item"><a class="nav-link" href="./quemsomos.html">Quem somos</a></li>
           <li class="nav-item"><a class="nav-link" href="./portfolio.html">Portfólio</a></li>
           <li class="nav-item"><a class="nav-link" href="./nossarede.html">Nossa rede</a></li>
-          <li class="nav-item active"><a class="nav-link" href="./contato.html">Contato</a></li>
+          <li class="nav-item"><a class="nav-link" href="./contato.html">Contato</a></li>
         </ul>
         <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
           <!--<li class="ms-3"><a target="_blank" class="text-muted" href="https://api.whatsapp.com/send?phone=555391920073&text=Ol%C3%A1!" target="_blank"><img class="navbar-redes" src="./img/navbar/whatsapp.svg" alt="whatsapp"></a></li>
@@ -85,63 +85,17 @@
 
   <main>
 
-    <!-- SEÇÃO CONTATO -->
-    <section class="py-5">
-      <div class="container px-5 my-5 px-5">
-        <div class="text-center mb-5">
-          <a id="contato">
-            <h2 class="display-4">CONTATO</h2>
-          </a>
-          <p class="lead mb-0">Nós amamos te ouvir!</p>
-        </div>
-        <div class="row gx-5 justify-content-center">
-          <div class="col-lg-6">
-            <form id="contactForm" data-sb-form-api-token="API_TOKEN"
-              action="https://formsubmit.co/producoessur@gmail.com" method="POST">
-              <!-- hidden input -->
-              <input type="hidden" name="_next" value="./sucesso.html" />
-              <input type="hidden" name="_cc" value="pampraieiro@gmail.com" />
-              <input type="hidden" name="_autoresponse"
-                value="Recebemos sua mensagem, obrigado pelo contato e logo responderemos!" />
-              <!-- Name input -->
-              <div class="form-floating mb-3">
-                <input class="form-control" id="name" name="name" type="text" placeholder="Digite seu nome..."
-                  data-sb-validations="required" required />
-                <label for="name">Nome</label>
-                <div class="invalid-feedback" data-sb-feedback="name:required">O nome é obrigatório.</div>
-              </div>
-              <!-- Email address input -->
-              <div class="form-floating mb-3">
-                <input class="form-control" id="email" name="email" type="email" placeholder="name@example.com"
-                  data-sb-validations="required,email" required />
-                <label for="email">Email</label>
-                <div class="invalid-feedback" data-sb-feedback="email:required">O email é obrigatório.</div>
-                <div class="invalid-feedback" data-sb-feedback="email:email">O email não é valido.</div>
-              </div>
-              <!-- Subject input -->
-              <div class="form-floating mb-3">
-                <input class="form-control" id="name" name="subject" type="text" placeholder="Digite o assunto..."
-                  data-sb-validations="required" required />
-                <label for="subject">Assunto</label>
-                <div class="invalid-feedback" data-sb-feedback="name:required">O nome é obrigatório.</div>
-              </div>
-              <!-- Message input -->
-              <div class="form-floating mb-3">
-                <textarea class="form-control" id="message" name="message" type="text"
-                  placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"
-                  required></textarea>
-                <label for="message">Mensagem</label>
-                <div class="invalid-feedback" data-sb-feedback="message:required">A mensagem é obrigatória.</div>
-              </div>
-              <!-- Submit Button -->
-              <div class="d-grid"><button class="btn btn-dark btn-lg" id="submitButton" type="submit">Enviar
-                  email</button></div>
-            </form>
-          </div>
+    <!-- SEÇÃO BLOG -->
+    <section>
+      <div>
+        <div class="videoresponsivo-embedcontainer">
+          <iframe src="https://surproducoes.blogspot.com/" id="iframe_container" frameborder="0"
+            webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" allow="autoplay; fullscreen" width="100%"
+            height="1000"></iframe>
         </div>
       </div>
     </section>
-    <!-- FIM DA SEÇÃO CONTATO -->
+    <!-- FIM DA BLOG -->
 
   </main>
 
